@@ -21,7 +21,9 @@ router.post('/createMsg', async (req, res) => {
         });
     }
 })
-
+router.get('/createMsg', (req, res) => {
+    res.status(200).send({});
+})
 
 
 router.get('/message', async (req, res) => {
