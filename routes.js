@@ -4,16 +4,7 @@ const message = require("./messageModel");
 router.post('/createMsg', async (req, res) => {
     const { body } = req.body
     try {
-
-
-
-
-
-
-
-
-        
-        const result = await new message({ message: req }).save();
+        const result = await new message({ message: body }).save();
         // Returning successfull response
         return res.status(200).json({
             success: true,
