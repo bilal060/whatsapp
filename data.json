@@ -1,0 +1,68 @@
+{
+  "event": {
+    "method": "POST",
+    "path": "/",
+    "query": {},
+    "client_ip": "173.252.127.116",
+    "url": "https://eo61i3t02r4xy9m.m.pipedream.net/",
+    "headers": {
+      "host": "eo61i3t02r4xy9m.m.pipedream.net",
+      "content-length": "480",
+      "accept": "*/*",
+      "accept-encoding": "deflate, gzip",
+      "user-agent": "facebookexternalua",
+      "content-type": "application/json",
+      "x-hub-signature": "sha1=0885c162dba72b9c9b1ff153ff67683c760721ea",
+      "x-hub-signature-256": "sha256=c53bc6f288b6cb7ff8c4e38043f70fae5613d1cd73212a73c4161189193eb0d4"
+    },
+    "body": {
+      "object": "whatsapp_business_account",
+      "entry": [
+        {
+          "id": "110502425181327",
+          "changes": [
+            {
+              "value": {
+                "messaging_product": "whatsapp",
+                "metadata": {
+                  "display_phone_number": "15550472380",
+                  "phone_number_id": "106183675617980"
+                },
+                "contacts": [
+                  { "profile": { "name": "Umer" }, "wa_id": "923156566058" }
+                ],
+                "messages": [
+                  {
+                    "from": "923156566058",
+                    "id": "wamid.HBgMOTIzMTU2NTY2MDU4FQIAEhggQzJENDlDNzFBMEEyN0IyM0U5QzM5QzE5REQ4Mzg2RjMA",
+                    "timestamp": "1666160516",
+                    "text": { "body": "Hi" },
+                    "type": "text"
+                  }
+                ]
+              },
+              "field": "messages"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "context": {
+    "id": "2GLGb1ccsa0N3WihT5A8g7Ql4M5",
+    "ts": "2022-10-19T06:21:57.284Z",
+    "pipeline_id": null,
+    "workflow_id": "p_k2CPZej",
+    "deployment_id": "d_4nsz6xkL",
+    "source_type": "COMPONENT",
+    "verified": false,
+    "hops": null,
+    "test": false,
+    "replay": false,
+    "owner_id": "u_gPhoon2",
+    "platform_version": "0.0.0",
+    "workflow_name": "WhatsApp Hooks",
+    "resume": null,
+    "trace_id": "2GLGb1uJFWhOesgjo8ASaKXoeqb"
+  }
+}
