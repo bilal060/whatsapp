@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const message = require("./messageModel");
 router.post('/createMsg', async (req, res) => {
-    const { body } = req.body
+    const { body } = req.query
     try {
         const result = await new message({ message: body }).save();
         // Returning successfull response
