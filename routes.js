@@ -22,7 +22,8 @@ router.post('/createMsg', async (req, res) => {
     }
 })
 router.get('/createMsg', (req, res) => {
-    res.status(200).json({test: 0});
+    var challenge = req.query['hub.challenge'];
+    res.status(200).json(challenge);
 })
 
 
