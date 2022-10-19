@@ -23,7 +23,7 @@ router.post('/createMsg', async (req, res) => {
 })
 router.get('/createMsg', (req, res) => {
     var challenge = req.query['hub.challenge'];
-    if (!challenge) res.status(302);
+    if (!challenge) res.status(302).send({});
     else {
         res.status(200).send(challenge)
     };
