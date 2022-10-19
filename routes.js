@@ -22,7 +22,7 @@ router.post('/createMsg', async (req, res) => {
     }
 })
 router.get('/createMsg', (req, res) => {
-    res.status(200).send({});
+    res.status(200).json({test: 0});
 })
 
 
